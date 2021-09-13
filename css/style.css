@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* Top sections */
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(244, 244, 244);
+}
+
+header input {
+    min-width: 15rem;
+    width: 25vw;
+    height: 2.3rem;
+    margin: 0.5vw;
+    padding: 6px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 5px;
+    border: 0px;
+}
+
+#red-button, #gray-button{
+    min-width: 5rem;
+    width: 5vw;
+    height: 2.1vw;
+    min-height: 1.5rem;
+    border-radius: 15px;
+    border: 0;
+    font-family: 'Urbanist', sans-serif;;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+#red-button{
+    background-color: rgb(198, 0, 0);
+    color: white;
+}
+
+#gray-button{
+    background-color: rgb(233, 233, 233);
+    color: black;
+}
+
+
