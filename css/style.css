@@ -1,61 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@500;600;700&display=swap");
 
-
-*{
-    box-sizing: border-box;
-
+* {
+  box-sizing: border-box;
 }
-body{
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
-
-
-
 
 /* Top sections */
-header div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    border-bottom: 2px solid rgb(244, 244, 244);
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(244, 244, 244);
 }
 
 header input {
-    min-width: 15rem;
-    width: 25vw;
-    height: 2.3rem;
-    margin: 0.5vw;
-    padding: 6px;
-    background-color: rgb(233, 233, 233);
-    border-radius: 5px;
-    border: 0px;
+  min-width: 12.5rem;
+  width: 25vw;
+  height: 2.3rem;
+  margin: 0.5vw;
+  padding: 6px;
+  background-color: rgb(233, 233, 233);
+  border-radius: 5px;
+  border: 0px;
 }
 
-#red-button, #gray-button{
-    min-width: 5rem;
-    width: 5vw;
-    height: 2.1vw;
-    min-height: 1.5rem;
-    border-radius: 15px;
-    border: 0;
-    font-family: 'Urbanist', sans-serif;;
-    font-weight: 600;
-    cursor: pointer;
-    
+#red-button,
+#gray-button {
+  min-width: 5rem;
+  width: 5vw;
+  height: 2.1vw;
+  min-height: 1.5rem;
+  border-radius: 15px;
+  border: 0;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  flex-grow: 1;
 }
 
-#red-button{
-    background-color: rgb(198, 0, 0);
-    color: white;
+#red-button {
+  background-color: rgb(198, 0, 0);
+  color: white;
 }
 
-#gray-button{
-    background-color: rgb(233, 233, 233);
-    color: black;
+#gray-button {
+  background-color: rgb(233, 233, 233);
+  color: black;
 }
 
+.logo {
+  width: 180px;
+}
 
+/* Main image section */
+
+#food-image {
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  padding-top: 5vw;
+  border-radius: 5px;
+}
+
+.duration {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-align: center;
+  color: rgb(148, 148, 148);
+}
+
+h1 {
+  text-align: center;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+
+#item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9vw;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-self: center;
+  align-items: stretch;
+}
+
+span {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.epi-icon {
+  border-radius: 50px;
+  padding: 1px;
+  border: 2px solid rgb(173, 173, 173);
+}
+
+.recipe-con {
+  text-align: start;
+  display: flex;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+p {
+  margin: 0px;
+}
+
+.button-con {
+  display: flex;
+  justify-items: center;
+  gap: 1vw;
+}
