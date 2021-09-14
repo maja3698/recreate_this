@@ -44,19 +44,21 @@ header input {
   flex-grow: 1;
 }
 
-#red-button {
+#red-button,
+#red-button-main {
   background-color: rgb(198, 0, 0);
   color: white;
 }
 
-#red-button:hover{
-  transition: .5s ease;
+#red-button:hover,
+#red-button-main:hover {
+  transition: 0.5s ease;
   background: rgb(245, 0, 0); /* Black see-through */
-  opacity:1;
-
+  opacity: 1;
 }
 
-#gray-button {
+#gray-button,
+#gray-button-main {
   background-color: rgb(233, 233, 233);
   color: black;
 }
@@ -132,4 +134,30 @@ p {
   display: flex;
   justify-items: center;
   gap: 1vw;
+  margin-top: 1vw;
+}
+
+#red-button-main,
+#gray-button-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  min-width: 5rem;
+  width: fit-content;
+  height: 2.1vw;
+  min-height: 1.5rem;
+  border-radius: 15px;
+  border: 0;
+  padding: 1vw;
+  font-family: "Urbanist", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.recipe {
+  font-family: "Urbanist", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
 }
