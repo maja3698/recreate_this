@@ -161,3 +161,40 @@ p {
   font-size: 0.8rem;
   line-height: 1.5rem;
 }
+
+/* FOOTER STYLING */
+
+footer{
+  display: grid;
+  background-color: rgb(228, 228, 228);
+  grid-template-areas: "applelink linksource";
+  grid-template-columns: 35% 1fr;
+  padding: 3vw;
+  font-family: "Urbanist", sans-serif;
+  font-size: 0.8rem;
+}
+
+#appstore{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+  gap:1vw;
+}
+
+.link-con{
+  display: grid;
+  grid-template-areas: "discover about resources connect";
+}
+
+.link-item{
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.link-con a{
+  text-decoration-line: none;
+  color: rgb(94, 94, 94);
+  
+}
