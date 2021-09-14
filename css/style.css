@@ -49,6 +49,13 @@ header input {
   color: white;
 }
 
+#red-button:hover{
+  transition: .5s ease;
+  background: rgb(245, 0, 0); /* Black see-through */
+  opacity:1;
+
+}
+
 #gray-button {
   background-color: rgb(233, 233, 233);
   color: black;
