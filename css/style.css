@@ -14,6 +14,7 @@ header div {
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  z-index: 2;
   width: 100%;
   background-color: rgb(255, 255, 255);
   border-bottom: 2px solid rgb(244, 244, 244);
@@ -97,6 +98,7 @@ h1 {
   justify-content: center;
   align-items: center;
   gap: 9vw;
+  margin-top: 2vw;
 }
 
 .item {
@@ -162,9 +164,81 @@ p {
   line-height: 1.5rem;
 }
 
+/* FOODLIST */
+
+.foodlist {
+  margin-top: 5vw;
+  display: flex;
+  justify-content: center;
+  margin: 3vw;
+  flex-wrap: wrap;
+  gap: 1vw;
+}
+
+.foodbox {
+  max-width: 200px;
+  word-wrap: normal;
+  margin-right: auto;
+  font-family: "Urbanist", sans-serif;
+}
+
+.display-img {
+  border-radius: 5px;
+  display: block;
+}
+
+.dishname {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Black see-through */
+  width: 100%;
+  height: fit-content;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  font-size: 0.9rem;
+  padding: 1vw;
+}
+
+.display-con {
+  position: relative;
+  justify-self: center;
+}
+
+.info-con,
+.info-rate {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-rate {
+  align-items: center;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  gap: 1vw;
+  margin-top: 0.5vw;
+}
+
+.rating-nr {
+  font-size: 0.8rem;
+  background-color: rgb(230, 230, 230);
+  padding: 0.3vw;
+  border: 3px gray;
+  border-radius: 4px;
+  color: rgb(73, 73, 73);
+}
+
+.site,
+.uploaded,
+.ratingnr {
+  font-size: 0.8rem;
+}
+
 /* FOOTER STYLING */
 
-footer{
+footer {
   display: grid;
   background-color: rgb(228, 228, 228);
   grid-template-areas: "applelink linksource";
@@ -174,27 +248,26 @@ footer{
   font-size: 0.8rem;
 }
 
-#appstore{
+#appstore {
   display: flex;
   flex-direction: column;
   align-self: center;
   justify-self: center;
-  gap:1vw;
+  gap: 1vw;
 }
 
-.link-con{
+.link-con {
   display: grid;
   grid-template-areas: "discover about resources connect";
 }
 
-.link-item{
+.link-item {
   display: flex;
   flex-direction: column;
   gap: 1vw;
 }
 
-.link-con a{
+.link-con a {
   text-decoration-line: none;
   color: rgb(94, 94, 94);
-  
 }
